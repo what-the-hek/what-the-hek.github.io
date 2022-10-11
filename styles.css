@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+ /* * { border: 1px solid lightgray;}  */
+
+html {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+} 
+
+footer, header, header section, header section div {
+    background-color: #80A1C1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header section {
+    width: 100%;
+}
+
+header section a {
+    text-decoration: none;
+}
+
+header section div, header section nav {
+    padding: 0px 20px;
+}
+
+footer p, .footer-text {
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 0px 10px 0px 10px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #2A2E45;
+    text-decoration: underline;
+    /* color: #A05C7B; */
+    /* color: #1B4079; */
+}
+
+img.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    margin: 20px 25px 20px 25px;
+}
+
+
+main {
+    background-color: #F7F6F3;
+    background-color: #fdfcf9;
+    /* background-color: #fffefd; */
+    padding: 100px 1rem 1rem 1rem;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 200;
+    text-align: center;
+    /* color: #A05C7B; */
+    /* color: #824A63; */
+    color: #2A2E45;
+    padding: 5px;
+
+    margin: 0px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top :0px;
+}
+
+h2 a {
+    color:#2A2E45
+}
+
+footer {
+    margin-top: auto;
+}
+
+div {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width:25%;
+}
+
+input, textarea {
+    width: 75%;
+    /* background-color: white; */
+}
+
+button {
+    background-color:#80A1C1;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #B57DB0;
+}
+
+/* ------------------------------------------------ classes and ids ------------------------------------------------------- */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.header-title{
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0px;
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#profile-img-resume {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid gray; */
+}
+
+#profile-img-resume a {
+    background-color:#80A1C1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#profile-img-resume a:hover {
+    /* background-color: #A05C7B; */
+    /* background-color: #D7B9D5; */
+    /* background-color: #CBA4C8; */
+    background-color: #B57DB0;
+}
+
+#aboutme-section {
+    width: 50%;
+    /* border: 1px solid gray; */
+}
+
+/* #aboutme-section h3 {
+    border: 1px solid gray;
+} */
+
+
+#projects-container div {
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+    margin: 20px;
+}
+
+/*.projects {
+    background-color:#80A1C1;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+}
+
+.projects a {
+    color:white;
+}
+
+.projects:hover, .projects a:hover {
+    background-color: #B57DB0;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}*/
+
+.form-container {
+    width: 50%;
+    max-width: 70%;
+}
+
+.form-item {
+    display: flex;
+}
+
+/*.form-item button {
+    justify-content: center;
+}*/
+
+/* ----------------------------------------- portfolio -------------------------------------- */
+
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a.portfolio {
+    text-decoration: none;
+    width: 20%;
+    background-color: white;
+    color: #2A2E45;
+    padding: 10px;
+    border: 1px solid #80A1C1;
+    box-shadow: 0 3px 5px #2a2e4562;
+    margin: 10px;
+}
+
+a.portfolio:hover {
+    box-shadow: 0 6px 10px #2a2e4562;
+}
+
+a.portfolio:active {
+    color: #965687;
+}
+
+.portfolio-image {
+    width: 100%;
+    margin: 0px;
+    border: 1px solid #80A1C1;
+}
+
+/* ----------------------------------------- media queries ---------------------------------- */
+
+@media (max-width: 600px) {
+    
+    .header-title {
+        display: none;
+    }
+
+    #about-me-mobile {
+        flex-direction: column;
+    }
+
+    #profile-img-resume, #aboutme-section {
+        width: 90%;
+    }
+
+    #profile-img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #profile-img-resume {
+        order: 1;
+    }
+
+    a.portfolio {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    header section {
+        max-width: 70%;
+    }
+
+}
