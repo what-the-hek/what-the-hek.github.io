@@ -107,7 +107,7 @@ footer {
 div {
     padding: 20px;
 }
-
+/*  --------------------------------- contact form ------------------------------- */
 form {
     display: flex;
     flex-direction: column;
@@ -198,28 +198,6 @@ button:hover {
     margin: 20px;
 }
 
-/*.projects {
-    background-color:#80A1C1;
-    color: white;
-    padding: 10px;
-    border-radius: 10px 10px 0px 0px;
-    margin: 0px;
-}
-
-.projects a {
-    color:white;
-}
-
-.projects:hover, .projects a:hover {
-    background-color: #B57DB0;
-}
-
-.project-image {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}*/
-
 .form-container {
     width: 50%;
     max-width: 70%;
@@ -227,11 +205,8 @@ button:hover {
 
 .form-item {
     display: flex;
-}
-
-/*.form-item button {
     justify-content: center;
-}*/
+}
 
 /* ----------------------------------------- portfolio -------------------------------------- */
 
