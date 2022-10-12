@@ -52,8 +52,6 @@ nav a {
 nav a:hover {
     color: #2A2E45;
     text-decoration: underline;
-    /* color: #A05C7B; */
-    /* color: #1B4079; */
 }
 
 img.logo {
@@ -65,11 +63,7 @@ img.logo {
     margin: 20px 25px 20px 25px;
 }
 
-
 main {
-    /* background-color: #F7F6F3; */
-    /* background-color: #fdfcf9; */
-    /* background-color: #fffefd; */
     padding: 100px 1rem 1rem 1rem;
 }
 
@@ -82,8 +76,6 @@ h1 {
     font-size: 2.5em;
     font-weight: 200;
     text-align: center;
-    /* color: #A05C7B; */
-    /* color: #824A63; */
     color: #2A2E45;
     padding: 5px;
 
@@ -100,10 +92,6 @@ h2 a {
     color:#2A2E45
 }
 
-/*footer {
-    margin-top: auto;
-}*/
-
 div {
     padding: 20px;
 }
@@ -114,6 +102,7 @@ iframe {
 }
 
 /*  --------------------------------- contact form ------------------------------- */
+
 form {
     display: flex;
     flex-direction: column;
@@ -126,7 +115,6 @@ label {
 
 input, textarea {
     width: 75%;
-    /* background-color: white; */
 }
 
 button {
@@ -171,7 +159,6 @@ button:hover {
 #profile-img-resume {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid gray; */
 }
 
 #profile-img-resume a {
@@ -183,21 +170,12 @@ button:hover {
 }
 
 #profile-img-resume a:hover {
-    /* background-color: #A05C7B; */
-    /* background-color: #D7B9D5; */
-    /* background-color: #CBA4C8; */
     background-color: #B57DB0;
 }
 
 #aboutme-section {
     width: 50%;
-    /* border: 1px solid gray; */
 }
-
-/* #aboutme-section h3 {
-    border: 1px solid gray;
-} */
-
 
 #projects-container div {
     background-color: white;
@@ -208,7 +186,6 @@ button:hover {
 
 .form-container {
     width: 50%;
-    /* max-width: 2000px; */
 }
 
 .form-item {
@@ -304,15 +281,3 @@ a.portfolio:active {
     }
     
  }
-
-@media (min-width: 1920px) {
-
-   /* header section {
-        max-width: 70%;
-    }
-
-    /*.form-container {
-        width: 50%;
-    }*/
-
-}
