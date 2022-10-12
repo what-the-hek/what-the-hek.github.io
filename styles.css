@@ -107,6 +107,12 @@ h2 a {
 div {
     padding: 20px;
 }
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
 /*  --------------------------------- contact form ------------------------------- */
 form {
     display: flex;
@@ -244,13 +250,13 @@ a.portfolio:active {
 
 /* ----------------------------------------- media queries ---------------------------------- */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     
     .header-title {
         display: none;
     }
 
-    #about-me-mobile {
+    .mobile-section {
         flex-direction: column;
     }
 
@@ -279,7 +285,25 @@ a.portfolio:active {
     button {
         width: 100%;
     }
+
+    iframe {
+        width: 100%;
+    }
+
 }
+
+
+@media (max-width: 1000px) {
+
+    .tablet-section {
+        flex-direction: column;
+    }
+ 
+    .mobile-div {
+        order: 1;
+    }
+    
+ }
 
 @media (min-width: 1920px) {
 
