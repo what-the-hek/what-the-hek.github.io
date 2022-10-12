@@ -200,7 +200,7 @@ button:hover {
 
 .form-container {
     width: 50%;
-    max-width: 70%;
+    /* max-width: 2000px; */
 }
 
 .form-item {
@@ -269,6 +269,14 @@ a.portfolio:active {
     a.portfolio {
         width: 100%;
     }
+
+    .form-container{
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -276,5 +284,9 @@ a.portfolio:active {
     header section {
         max-width: 70%;
     }
+
+    /*.form-container {
+        width: 50%;
+    }*/
 
 }
