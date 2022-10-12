@@ -67,8 +67,8 @@ img.logo {
 
 
 main {
-    background-color: #F7F6F3;
-    background-color: #fdfcf9;
+    /* background-color: #F7F6F3; */
+    /* background-color: #fdfcf9; */
     /* background-color: #fffefd; */
     padding: 100px 1rem 1rem 1rem;
 }
@@ -100,9 +100,9 @@ h2 a {
     color:#2A2E45
 }
 
-footer {
+/*footer {
     margin-top: auto;
-}
+}*/
 
 div {
     padding: 20px;
@@ -141,6 +141,8 @@ button:hover {
 .content-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: #fdfcf9;
     height: 100%;
     min-height: 100vh;
     padding: 0;
