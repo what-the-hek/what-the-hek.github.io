@@ -173,7 +173,7 @@ button:hover {
     background-color: #B57DB0;
 }
 
-#aboutme-section {
+.description-section, #aboutme-section {
     width: 50%;
 }
 
@@ -278,6 +278,10 @@ a.portfolio:active {
  
     .mobile-div {
         order: 1;
+    }
+
+    .description-section {
+        width: 90%;
     }
     
  }
