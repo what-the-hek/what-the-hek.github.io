@@ -283,7 +283,7 @@ a.portfolio:active {
 
 @media (min-width: 1920px) {
 
-    header section {
+   /* header section {
         max-width: 70%;
     }
 
