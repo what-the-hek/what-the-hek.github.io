@@ -228,6 +228,40 @@ a.portfolio:active {
     border: 1px solid #80A1C1;
 }
 
+.tablet-section {
+    flex-wrap: wrap;
+}
+
+.assets h2 {
+    text-align: center;
+}
+
+.asset-images a {
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.asset-images img {
+    border: 1px solid #965687;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.asset-images img:hover {
+    box-shadow: 0 0 2px 2px #b57db07b;
+}
+
+.asset-images, .asset-images a {
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
 /* ----------------------------------------- media queries ---------------------------------- */
 
 @media (max-width: 800px) {
