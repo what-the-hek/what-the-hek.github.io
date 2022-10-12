@@ -131,6 +131,10 @@ button:hover {
 
 /* ------------------------------------------------ classes and ids ------------------------------------------------------- */
 
+.contact-me {
+    border-right: 1px solid white;
+}
+
 .content-wrapper {
     display: flex;
     flex-direction: column;
