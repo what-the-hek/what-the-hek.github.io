@@ -131,6 +131,10 @@ button:hover {
 
 /* ------------------------------------------------ classes and ids ------------------------------------------------------- */
 
+.openmenu {
+    display: none;
+}
+
 .contact-me {
     border-right: 1px solid white;
 }
@@ -266,8 +270,38 @@ a.portfolio:active {
 
 @media (max-width: 800px) {
     
-    .header-title {
+    /* ---- toggle menu for nav on smaller devices ---- */
+    .header-title, .menu {
         display: none;
+    }
+
+    .openmenu {
+        display: block;
+        margin: 10px;
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .openmenu:checked + .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+ 
+
+    /*  ------------- end of toggle menu ------------- */
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #fdfcf9;
+    }
+
+    .contact-me {
+        border-right: none;
     }
 
     .mobile-section {
