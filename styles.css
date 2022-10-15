@@ -271,8 +271,7 @@ a.portfolio:active {
 }
 
 /* ----------------------------------------- media queries ---------------------------------- */
-
-@media (max-width: 800px) {
+@media (max-width: 810px) {
     
 
     /* ---- toggle menu for nav on smaller devices ---- */
@@ -370,6 +369,10 @@ a.portfolio:active {
       }
     /*  ------------- end of toggle menu ------------- */
 
+    h1 {
+        font-size: 2em;
+    }
+
     nav a {
         padding: 10px;
         border-bottom: 1px solid #fdfcf9;
@@ -430,6 +433,11 @@ a.portfolio:active {
         width: 90%;
     }
     
+    header div, header nav {
+        font-size: .9em;
+        padding: 5px;
+    }
+
  }
 
  @media (min-width: 3000px) {
