@@ -131,6 +131,7 @@ button:hover {
 
 /* ------------------------------------------------ classes and ids ------------------------------------------------------- */
 
+/* hides checkbox for most larger devices */
 .openmenu {
     display: none;
 }
