@@ -67,7 +67,7 @@ main {
     padding: 100px 1rem 1rem 1rem;
 }
 
-main section {
+main section, .form-item {
     display: flex;
     justify-content: center;
 }
@@ -181,7 +181,7 @@ button:hover {
     background-color: #B57DB0;
 }
 
-.description-section, #aboutme-section {
+.description-section, #aboutme-section, .form-container {
     width: 50%;
 }
 
@@ -192,14 +192,11 @@ button:hover {
     margin: 20px;
 }
 
-.form-container {
-    width: 50%;
-}
-
+/* -- tidied this by moving up with another style
 .form-item {
     display: flex;
     justify-content: center;
-}
+} */
 
 /* ----------------------------------------- portfolio -------------------------------------- */
 
@@ -383,7 +380,7 @@ a.portfolio:active {
         flex-direction: column;
     }
 
-    #profile-img-resume, #aboutme-section {
+    #profile-img-resume, #aboutme-section, .form-container {
         width: 90%;
     }
 
@@ -397,19 +394,7 @@ a.portfolio:active {
         order: 1;
     }
 
-    a.portfolio {
-        width: 100%;
-    }
-
-    .form-container{
-        width: 90%;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    iframe {
+    button, iframe, a.portfolio {
         width: 100%;
     }
 
