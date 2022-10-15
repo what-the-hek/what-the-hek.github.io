@@ -295,7 +295,7 @@ a.portfolio:active {
         height: 32px;
         width: 32px;
         position: absolute;
-        top: 17px;
+        top: 20px;
         right: 20px;
         z-index: 5;
         cursor: pointer;
@@ -325,7 +325,7 @@ a.portfolio:active {
         height: 26px;
         width: 32px;
         position: absolute;
-        top: 17px;
+        top: 20px;
         right: 20px;
         z-index: 2;
         display: flex;
