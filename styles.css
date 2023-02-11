@@ -22,11 +22,24 @@
     /* border: 1px solid lightgray; */
 }
 
+/*  end  */
+/*  --------------------------------- general styles for main, body and header ------------------------------- */
+
 body {
     background-color: var(--background);
     margin: 0;
     padding: 0;
 } 
+
+header {
+    background-color: var(--background);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
 
 main {
     display: flex;
@@ -45,43 +58,6 @@ section div {
     display: flex;
 }
 
-a, p {
-    padding: 5px;
-    margin: 5px;
-}
-
-/* end */
-/*  --------------------------------- header and footer ------------------------------- */
-
-footer, header, header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-}
-
-header section {
-    width: 100%;
-}
-
-header section a {
-    text-decoration: none;
-}
-
-header section div, header section nav {
-    padding: 0px 20px;
-}
-
-footer p, .footer-text {
-    width: 100%;
-    text-align: center;
-}
-
 /*  end  */
 /*  --------------------------------- navigation bar ------------------------------- */
 
@@ -93,30 +69,15 @@ footer p, .footer-text {
 .contact-me {
     color: white;
     background-color: var(--hairpink);
+    border-radius: 5px;
 }
 
-nav a {
-    color: white;
-    padding: 0px 10px 0px 10px;
-    font-size: 1.2em;
-}
-
-nav a:hover {
-    color: #2A2E45;
+a:hover {
     text-decoration: underline;
 }
 
-img.logo {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 25px;
-    margin: 20px 25px 20px 25px;
-}
-
 /*  end  */
-/*  --------------------------------- main and body styles ------------------------------- */
+/*  --------------------------------- content styles ------------------------------- */
 
 #profile-img {
     width: 200px;
@@ -124,13 +85,11 @@ img.logo {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    /* border-radius: 10px 10px 0px 0px; */
 }
 
 h1 {
     font-size: 2.5em;
     font-weight: 200;
-    /* text-align: center; */
     padding: 10px;
     margin: 0px;
 }
@@ -147,6 +106,11 @@ h2 a {
 
 div {
     padding: 20px;
+}
+
+a, p {
+    padding: 5px;
+    margin: 5px;
 }
 
 iframe {
