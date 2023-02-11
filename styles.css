@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /*  - - - - SITE-WIDE STYLES - - - -  */
+
 :root {
  --hairpink: #b9506f;
  --darkpink: #8D3A51;
@@ -15,6 +16,9 @@
     font-family: 'Comfortaa','Dosis', Arial, sans-serif;
     font-size: 18px;
     color: var(--ghostwhite);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
     /* border: 1px solid lightgray; */
 }
 
@@ -23,10 +27,33 @@ body {
     margin: 0;
     padding: 0;
 } 
-/*  - - - - END OF SITE-WIDE STYLES - - - - */
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 1rem 1rem 1rem;
+}
+
+main section {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+section div {
+    display: flex;
+}
+
+a, p {
+    padding: 5px;
+    margin: 5px;
+}
+
+/*  - - - - END OF SITE-WIDE STYLES - - - - */
 /*  - - - - HEADER AND FOOTER - - - -  */
-footer, header, header section, header section div {
+
+footer, header, header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,9 +81,10 @@ footer p, .footer-text {
     width: 100%;
     text-align: center;
 }
-/*  - - - -  END OF HEADER AND FOOTER - - - -  */
 
+/*  - - - -  END OF HEADER AND FOOTER - - - -  */
 /*  - - - - NAVIGATION BAR - - - -  */
+
 nav a {
     color: white;
     padding: 0px 10px 0px 10px;
@@ -77,20 +105,13 @@ img.logo {
     margin: 20px 25px 20px 25px;
 }
 
-main {
-    padding: 100px 1rem 1rem 1rem;
-}
-
-main section, .form-item {
-    display: flex;
-    justify-content: center;
-}
+/*  - - - - END OF NAVIGATION BAR - - - -  */
+/*  - - - - MAIN AND BODY STYLES - - - -  */
 
 h1 {
     font-size: 2.5em;
     font-weight: 200;
-    text-align: center;
-    color: #2A2E45;
+    /* text-align: center; */
     padding: 10px;
     margin: 0px;
 }
@@ -113,6 +134,21 @@ iframe {
     width: 560px;
     height: 315px;
 }
+/*  - - - - END OF MAIN BODY AND STYLES - - - -  */
+/*  - - - - PROJECTS SECTION - - - - - */
+
+#projects {
+    background-color: var(--black-blue);
+    width: 100%;
+}
+
+.card img {
+    width: 40%;
+}
+
+/*  - - - - END OF PROJECTS SECTION - - - -  */
+
+
 
 /*  --------------------------------- contact form ------------------------------- */
 
@@ -151,23 +187,8 @@ button:hover {
 }
 
 .contact-me {
-    border-right: 1px solid white;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* background-color: #fdfcf9; */
-    height: 100%;
-    min-height: 100vh;
-    padding: 0;
-}
-
-.header-title{
-    font-size: 2em;
-    font-weight: 300;
-    margin: 0px;
+    color: white;
+    background-color: var(--hairpink);
 }
 
 #profile-img {
@@ -175,27 +196,11 @@ button:hover {
     height: 200px;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 50%;
+    /* border-radius: 10px 10px 0px 0px; */
 }
 
-#profile-img-resume {
-    display: flex;
-    flex-direction: column;
-}
-
-#profile-img-resume a {
-    background-color:#80A1C1;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-}
-
-#profile-img-resume a:hover {
-    background-color: #B57DB0;
-}
-
-.description-section, #aboutme-section, .form-container {
+.description-section, .form-container {
     width: 50%;
 }
 
@@ -297,7 +302,7 @@ a.portfolio:active {
     
 
     /* ---- toggle menu for nav on smaller devices ---- */
-    .header-title, .menu {
+    .menu {
         display: none;
     }
 
@@ -331,13 +336,6 @@ a.portfolio:active {
         padding: 20px;
         margin: 20px;
       }
-
-    /* .openmenu:checked + .menu {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        
-    } */
 
     .checkbox .hamburger-lines {
         padding: 0;
@@ -452,7 +450,7 @@ a.portfolio:active {
 
  @media (min-width: 3000px) {
 
-    header section {
+    header {
         justify-content: space-around;
         padding: 0px 30px 0px 30px;
     }
