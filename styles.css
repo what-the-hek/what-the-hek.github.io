@@ -72,7 +72,7 @@ a:hover {
     color: white;
     border-radius: 5px;
     border: none;
-    background-color: var(--dark-blue);
+    background-color: var(--black-blue);
 }
 
 /*  end  */
@@ -98,8 +98,8 @@ a:hover {
 #mini-nav a:hover {
     color: white;
     border-radius: 5px;
-    border: 1px solid var(--dark-blue);
-    background-color: var(--dark-blue);
+    border: 1px solid var(--black-blue);
+    background-color: var(--black-blue);
 }
 
 #profile-img {
@@ -150,21 +150,29 @@ section div {
     width: 100%;
 }
 
+#projects a:hover {
+    background-color: var(--background);
+}
+
 /*  end  */
 /*  --------------------------------- contact form ------------------------------- */
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
 }
 
 label {
-    width:25%;
+    margin-top: 20px;
 }
 
 input, textarea {
-    width: 75%;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: black;
 }
 
 button {
@@ -173,10 +181,10 @@ button {
     font-size: 1em;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: var(--darkpink);
+    background-color: var(--black-blue);
 }
 /*  end  */
