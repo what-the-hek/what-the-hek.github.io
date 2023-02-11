@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*  - - - - SITE-WIDE STYLES - - - -  */
+
+:root {
+ --hairpink: #b9506f;
+ --darkpink: #8D3A51;
+ --darkestpink: #8D3A51;
+ --black-blue: #11151C;
+ --dark-blue: #212D40;
+ --background: #364156;
+ --ghostwhite: #E6E9F0;
+}
+
+* {
+    font-family: 'Comfortaa','Dosis', Arial, sans-serif;
+    font-size: 18px;
+    color: var(--ghostwhite);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid lightgray; */
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+} 
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 1rem 1rem 1rem;
+}
+
+main section {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+section div {
+    display: flex;
+}
+
+a, p {
+    padding: 5px;
+    margin: 5px;
+}
+
+/*  - - - - END OF SITE-WIDE STYLES - - - - */
+/*  - - - - HEADER AND FOOTER - - - -  */
+
+footer, header, header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header section {
+    width: 100%;
+}
+
+header section a {
+    text-decoration: none;
+}
+
+header section div, header section nav {
+    padding: 0px 20px;
+}
+
+footer p, .footer-text {
+    width: 100%;
+    text-align: center;
+}
+
+/*  - - - -  END OF HEADER AND FOOTER - - - -  */
+/*  - - - - NAVIGATION BAR - - - -  */
+
+nav a {
+    color: white;
+    padding: 0px 10px 0px 10px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #2A2E45;
+    text-decoration: underline;
+}
+
+img.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    margin: 20px 25px 20px 25px;
+}
+
+/*  - - - - END OF NAVIGATION BAR - - - -  */
+/*  - - - - MAIN AND BODY STYLES - - - -  */
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 200;
+    /* text-align: center; */
+    padding: 10px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top :0px;
+}
+
+h2 a {
+    color:#2A2E45
+}
+
+div {
+    padding: 20px;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+/*  - - - - END OF MAIN BODY AND STYLES - - - -  */
+/*  - - - - PROJECTS SECTION - - - - - */
+
+#projects {
+    background-color: var(--black-blue);
+    width: 100%;
+}
+
+.card img {
+    width: 40%;
+}
+
+/*  - - - - END OF PROJECTS SECTION - - - -  */
+
+
+
+/*  --------------------------------- contact form ------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width:25%;
+}
+
+input, textarea {
+    width: 75%;
+}
+
+button {
+    background-color:#80A1C1;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #B57DB0;
+}
+
+/* ------------------------------------------------ classes and ids ------------------------------------------------------- */
+
+/* hides checkbox for most larger devices */
+.openmenu {
+    display: none;
+}
+
+.contact-me {
+    color: white;
+    background-color: var(--hairpink);
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+.description-section, .form-container {
+    width: 50%;
+}
+
+#projects-container div {
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* -- tidied this by moving up with another style
+.form-item {
+    display: flex;
+    justify-content: center;
+} */
+
+/* ----------------------------------------- portfolio -------------------------------------- */
+
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a.portfolio {
+    text-decoration: none;
+    width: 20%;
+    /* background-color: white; */
+    color: #2A2E45;
+    padding: 10px;
+    border: 1px solid #80A1C1;
+    box-shadow: 0 3px 5px #2a2e4562;
+    margin: 10px;
+}
+
+a.portfolio:hover {
+    box-shadow: 0 6px 10px #2a2e4562;
+}
+
+a.portfolio:active {
+    color: #965687;
+}
+
+.portfolio-image {
+    width: 100%;
+    margin: 0px;
+    border: 1px solid #80A1C1;
+}
+
+.tablet-section {
+    flex-wrap: wrap;
+}
+
+/* .assets h2 {
+    text-align: center;
+}
+
+.asset-images a {
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.asset-images img {
+    border: 1px solid #965687;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.asset-images img:hover {
+    box-shadow: 0 0 2px 2px #b57db07b;
+}
+
+.asset-images, .asset-images a {
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
+.assets {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.asset-images a img {
+    background-color: white;
+}
+
+.asset-images {
+    background-color: #80A1C1;
+    border: 1px solid #965687;
+} */
+
+/* ----------------------------------------- media queries ---------------------------------- */
+@media (max-width: 810px) {
+    
+
+    /* ---- toggle menu for nav on smaller devices ---- */
+    .menu {
+        display: none;
+    }
+
+    .openmenu {
+        display: block;
+        margin: 10px;
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .openmenu {
+        display: block;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 5;
+        cursor: pointer;
+        /* -- hides checkbox -- */
+        opacity: 0;
+    }
+
+    /* -- opens menu -- */
+    .checkbox input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+      }
+
+    .checkbox .hamburger-lines {
+        padding: 0;
+        margin: 10px;
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .checkbox .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: white;
+      }
+
+      /* -- transform hamburger lines -- */
+      .checkbox .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .checkbox .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .checkbox .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      /* -- change hamburger when checked -- */
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+    /*  ------------- end of toggle menu ------------- */
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #fdfcf9;
+    }
+
+    .contact-me {
+        border-right: none;
+    }
+
+    .mobile-section {
+        flex-direction: column;
+    }
+
+    #profile-img-resume, #aboutme-section, .form-container {
+        width: 90%;
+    }
+
+    #profile-img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #profile-img-resume {
+        order: 1;
+    }
+
+    button, iframe, a.portfolio {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .tablet-section {
+        flex-direction: column;
+    }
+ 
+    .mobile-div, .assets {
+        order: 1;
+    }
+
+    .description-section {
+        width: 90%;
+    }
+    
+    header div, header nav {
+        font-size: .9em;
+        padding: 5px;
+    }
+
+ }
+
+ @media (min-width: 3000px) {
+
+    header {
+        justify-content: space-around;
+        padding: 0px 30px 0px 30px;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding: 50px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p, a, li, label, nav, button {
+        font-size: 1.5em;
+    }
+
+    #profile-img {
+        width: 100%;
+    }
+
+    #aboutme-section, .description-section {
+        width: 30%;
+    }
+
+ }
