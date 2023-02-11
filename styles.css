@@ -17,7 +17,7 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
-    /* border: 1px solid lightgray; */
+    border: 1px solid lightgray;
 }
 
 img {
@@ -249,3 +249,205 @@ iframe, #projects img {
     border: none;
     text-decoration: underline;
 }
+
+/* ----------------------------------------- media queries ---------------------------------- */
+@media (max-width: 810px) {
+    
+
+    /* ---- toggle menu for nav on smaller devices ---- */
+    .menu {
+        display: none;
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .openmenu {
+        display: block;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 5;
+        cursor: pointer;
+        /* -- hides checkbox -- */
+        opacity: 0;
+        margin: 10px;
+    }
+
+    /* -- opens menu -- */
+    .checkbox input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+      }
+
+    .checkbox .hamburger-lines {
+        padding: 0;
+        margin: 10px;
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .checkbox .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: white;
+      }
+
+      /* -- transform hamburger lines -- */
+      .checkbox .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .checkbox .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .checkbox .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      /* -- change hamburger when checked -- */
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+    /*  ------------- end of toggle menu ------------- */
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p, a, i, li {
+        font-size: .8em;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #fdfcf9;
+    }
+
+    section, section div {
+        padding: 0;
+    }
+
+    #about-me, #mini-nav {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #about-me {
+        align-items: center;
+    }
+
+    #projects-section div, #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects {
+        flex-direction: column-reverse;
+    }
+
+    #profile-img {
+        width: 25%;
+        height: 25%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    img {
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    button, iframe, #projects img {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .tablet-section {
+        flex-direction: column;
+    }
+ 
+    .mobile-div, .assets {
+        order: 1;
+    }
+
+    .description-section {
+        width: 90%;
+    }
+    
+    header div, header nav {
+        font-size: .9em;
+        padding: 5px;
+    }
+
+ }
+
+ @media (min-width: 3000px) {
+
+    header {
+        justify-content: space-around;
+        padding: 0px 30px 0px 30px;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding: 50px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p, a, li, label, nav, button {
+        font-size: 1.5em;
+    }
+
+    #profile-img {
+        width: 100%;
+    }
+
+    #aboutme-section, .description-section {
+        width: 30%;
+    }
+
+ }
