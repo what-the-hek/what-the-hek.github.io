@@ -455,19 +455,12 @@ iframe, #projects img {
     }
 
     h1 {
-        font-size: 7em;
+        font-size: 4em;
         padding: 50px;
     }
     
     h2 {
-        font-size: 4em;
-    }
-
-    p, a, i, li {
         font-size: 2em;
     }
 
-    .card-title {
-        font-size: 3em;
-    }
  }
