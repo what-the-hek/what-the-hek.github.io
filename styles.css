@@ -434,6 +434,10 @@ iframe, #projects img {
         padding: 0px 30px 0px 30px;
     }
 
+    #about-me {
+        width: 30%;
+    }
+
     h1 {
         font-size: 4em;
         padding: 50px;
