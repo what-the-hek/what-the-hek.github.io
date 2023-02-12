@@ -148,6 +148,7 @@ section div {
 
 #projects-section a {
     padding: 20px;
+    width: calc(100% - 40px);
 }
 
 #projects-section a:hover {
@@ -403,16 +404,20 @@ iframe, #projects img {
 
 @media (max-width: 1000px) {
 
-    .tablet-section {
-        flex-direction: column;
-    }
- 
-    .mobile-div, .assets {
-        order: 1;
+    #about-me {
+        padding: 0;
+        width: 90%;
     }
 
-    .description-section {
-        width: 90%;
+    #projects-section div {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
     header div, header nav {
@@ -436,18 +441,6 @@ iframe, #projects img {
     
     h2 {
         font-size: 2.5em;
-    }
-
-    p, a, li, label, nav, button {
-        font-size: 1.5em;
-    }
-
-    #profile-img {
-        width: 100%;
-    }
-
-    #aboutme-section, .description-section {
-        width: 30%;
     }
 
  }
