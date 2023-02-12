@@ -427,7 +427,7 @@ iframe, #projects img {
 
  }
 
- @media (min-width: 3000px) {
+ @media (min-width: 2000px) {
 
     header {
         justify-content: space-around;
