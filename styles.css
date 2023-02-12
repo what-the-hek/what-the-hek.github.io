@@ -4,6 +4,7 @@
 
 :root {
  --hairpink: #b9506f;
+ --textpink: #7C3148;
  --black-blue: #11151C;
  --dark-blue: #212D40;
  --background: #364156;
@@ -238,14 +239,14 @@ iframe, #projects img {
 }
 
 #projects div a {
-    color: var(--black-blue);
+    color: var(--hairpink);
     background-color: var(--ghostwhite);
     padding: 0;
     margin: 0;
 }
 
 #projects div a:hover {
-    color: var(--black-blue);
+    color: var(--textpink);
     background-color: var(--ghostwhite);
     border: none;
     text-decoration: underline;
