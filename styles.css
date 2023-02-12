@@ -340,16 +340,23 @@ iframe, #projects img {
     /*  ------------- end of toggle menu ------------- */
 
     h1 {
-        font-size: 2em;
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
     }
 
     p, a, i, li {
-        font-size: .8em;
+        font-size: 1.2em;
+    }
+
+    .card-title {
+        font-size: 1.6em;
     }
 
     nav a {
         padding: 10px;
-        border-bottom: 1px solid #fdfcf9;
     }
 
     section, section div {
@@ -408,6 +415,10 @@ iframe, #projects img {
         padding: 0;
         width: 90%;
     }
+    
+    #projects-section {
+        width: 100%;
+    }
 
     #projects-section div {
         flex-wrap: wrap;
@@ -421,7 +432,7 @@ iframe, #projects img {
     }
     
     header div, header nav {
-        font-size: .9em;
+        font-size: 2em;
         padding: 5px;
     }
 
@@ -436,6 +447,10 @@ iframe, #projects img {
 
     #about-me {
         width: 30%;
+    }
+
+    #projects-section {
+        width: 100%;
     }
 
     h1 {
