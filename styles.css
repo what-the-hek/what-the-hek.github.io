@@ -224,7 +224,7 @@ button:hover {
 }
 
 #projects div {
-    flex-direction: column;
+    width: 45%;
 }
 
 #projects div h2, #projects div p, #projects div ul li {
@@ -241,6 +241,21 @@ iframe, #projects img {
     width: 560px;
     height: 315px;
     border-radius: 5px;
+}
+
+#projects img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    padding: 5px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#projects img:hover {
+    box-shadow: 0 1px 5px 2px var(--background);
 }
 
 #projects div a {
@@ -346,11 +361,11 @@ iframe, #projects img {
     /*  ------------- end of toggle menu ------------- */
 
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     p, a, i, li {
