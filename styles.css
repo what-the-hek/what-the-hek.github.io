@@ -135,10 +135,17 @@ a, p{
 section div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #projects-section {
     padding-top: 50px;
+    align-items: center;
+}
+
+#projects-section div {
+    /* width: 80%; */
+    margin: 0 100px;
 }
 
 .card img {
@@ -150,7 +157,8 @@ section div {
 
 #projects-section a {
     padding: 20px;
-    width: 45%;
+    margin: 10px;
+    width: 40%;
     background-color: var(--black-blue);
     border: 1px solid var(--black-blue);
     border-radius: 5px;
