@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/*  --------------------------------- site-wide styles ------------------------------- */
+
+:root {
+ --hairpink: #b9506f;
+ --textpink: #7C3148;
+ --black-blue: #11151C;
+ --dark-blue: #212D40;
+ --background: #364156;
+ --ghostwhite: #E6E9F0;
+}
+
+* {
+    font-family: 'Comfortaa', 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    color: var(--ghostwhite);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid lightgray; */
+}
