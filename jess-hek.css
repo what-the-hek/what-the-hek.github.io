@@ -74,19 +74,20 @@ h1 {
     color: white; 
     text-align: center;
     font-size: 3.5rem;
-    margin: 20px 5px;
+    margin: 20px 0 5px 0;
 }
 
 p {
     text-align: center;
     font-size: 1.2rem;
-    margin: 20px 5px;
+    margin: 5px 0 20px 0;
 }
 
 ul {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    padding: 10px 0;
 }
 
 li {
@@ -106,4 +107,8 @@ a {
 
 a:active {
     text-decoration: underline;
+}
+
+footer {
+    height: 50px;
 }
