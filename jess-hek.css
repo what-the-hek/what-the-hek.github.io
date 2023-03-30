@@ -8,7 +8,10 @@
  --black-blue: #11151C;
  --dark-blue: #212D40;
 
- --svgs: #f25d98;
+ --pink: #f25d98;
+ --soft-pink: #f2a9bc;
+
+ --svgs: #a7beed;
  --text: #b49573;
  --texta: #c2aa90;
  --background: #F2EEED;
@@ -44,10 +47,18 @@ main {
     background-attachment: fixed;
 }
 
-img {
+.stroke {
     margin: 0 10px 0 5px;
     width: 25px;
     background-color: white;
+    stroke: var(--svgs); 
+}
+
+.fill {
+    margin: 0 10px 0 5px;
+    width: 25px;
+    background-color: white;
+    fill: var(--svgs); 
 }
 
 .card {
@@ -57,6 +68,8 @@ img {
 }
 
 h1 {
+    stroke: var(--svgs);
+    color: white; 
     text-align: center;
     font-size: 3rem;
     margin: 20px 5px;
@@ -75,7 +88,7 @@ ul {
 }
 
 li {
-    margin: 10px 5px;
+    margin: 10px 0px;
     list-style: none;
 }
 
