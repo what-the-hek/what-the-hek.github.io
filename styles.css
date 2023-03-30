@@ -135,7 +135,7 @@ a, p{
 section div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 #projects-section {
@@ -406,14 +406,20 @@ iframe, #projects img {
     #projects-section div, #projects {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 10px;
     }
 
     #projects-section a {
-        width: calc(100% - 50px);
+        width: 80%;
     }
 
     #projects {
         flex-direction: column-reverse;
+    }
+
+    #projects div {
+        width: 100%;
     }
 
     #profile-img {
