@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/*  --------------------------------- site-wide styles ------------------------------- */
+
+:root {
+ --hairpink: #b9506f;
+ --textpink: #7C3148;
+ --black-blue: #11151C;
+ --dark-blue: #212D40;
+
+ --svgs: #f25d98;
+ --texta: #b49573;
+ --text: #c2aa90;
+ --background: #F2EEED;
+ --border: #eae2e0;
+}
+
+* {
+    font-family: 'Comfortaa', 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    color: var(--text);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+    /* border: 1px solid lightgray; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    min-height: 300px;
+    position: top;
+    background-image: url("images/me4.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+img {
+    margin: 0 10px 0 5px;
+    width: 25px;
+    background-color: white;
+}
+
+.card {
+    width: 80%;
+    margin: 10px;
+    background: transparent;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+li {
+    margin: 10px 5px;
+    list-style: none;
+}
+
+a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+a:active {
+    border: 1px solid var(--border)
+}
