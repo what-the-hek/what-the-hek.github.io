@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 /*  --------------------------------- site-wide styles ------------------------------- */
 
@@ -68,10 +68,12 @@ main {
 }
 
 h1 {
+    font-family: "Pacifico";
+    text-shadow: -1px -1px 0 var(--text);
     stroke: var(--svgs);
     color: white; 
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 20px 5px;
 }
 
@@ -102,5 +104,5 @@ a {
 }
 
 a:active {
-    border: 1px solid var(--border)
+    text-decoration: underline;
 }
