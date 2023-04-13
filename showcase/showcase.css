@@ -25,6 +25,10 @@
     /* border: 1px solid grey; */
 }
 
+body, main {
+    background-color: var(--svgs);
+}    
+
 h1, h2 {
     font-family: "Pacifico";
     font-size: 1.5rem;
