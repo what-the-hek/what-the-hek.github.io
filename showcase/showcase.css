@@ -36,7 +36,7 @@ h2 {
 
 h1 {
     font-family: "Pacifico";
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 a {
@@ -52,10 +52,10 @@ a:hover {
 #btn {
     font-size: 1.2rem;
     font-weight: 700;
-    color: white;
+    color: black;
     text-decoration: none;
-    /* background-color: var(--svgs); */
-    background-color: var(--pink);
+    background-color: var(--svgs);
+    /* background-color: var(--pink); */
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
@@ -63,14 +63,14 @@ a:hover {
 }
 
 #btn:hover {
-    /* background-color: var(--pink); */
-    background-color: var(--svgs);
-    color: black;
+    background-color: var(--pink);
+    /* background-color: var(--svgs); */
+    color: white;
     /* box-shadow: 3px 3px 2px var(--border); */
 }
 
 #web-btn {
-    /* font-size: 1.2rem; */
+    font-size: .8rem;
     /* font-weight: 700; */
     color: black;
     text-decoration: none;
@@ -136,7 +136,13 @@ li {
     position: fixed;
 }
 
-.bio-section h1, .bio-section h2, .bio-section p {
+.bio-section h1 {
+    padding: 5px 0 5px 0;
+    margin: 0 5px 0 5px;
+    width: 100%;
+}
+
+.bio-section h2, .bio-section p {
     /* padding: 5px 15px;   */
     padding: 5px 0 5px 0;
     margin: 5px;
@@ -148,7 +154,7 @@ li {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     /* border: 1px solid grey; */
 }
 
@@ -164,6 +170,15 @@ li {
     font-weight: 700;
     padding: 15px 0;
     text-align: center;
+}
+
+#bio-pic {
+    background-color: var(--svgs);
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    /* border: 1px solid var(--pink); */
 }
 
 /* #qr-code {
@@ -185,6 +200,8 @@ li {
     display: flex;
     flex-direction: column; 
     align-items: end;
+    padding-top: 10px;
+    padding-bottom: 20px;
 /*     justify-items: end; */
     background-color: var(--svgs);
     width: 70%;
@@ -199,7 +216,7 @@ li {
 .project-img {
     width: 300px;
     height: 200px;
-    border: 2px solid var(--svgs);
+    /* border: 2px solid var(--svgs); */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -231,7 +248,7 @@ li {
 
 .project-card {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     margin: 20px 50px 10px;
     border-radius: 10px;
     display: flex;
