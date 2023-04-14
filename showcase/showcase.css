@@ -41,7 +41,7 @@ h1 {
 
 a {
   text-decoration: underline;
-/*   color: var(--hairpink); */
+  color: black;
 }
 
 a:hover {
@@ -50,19 +50,41 @@ a:hover {
 }
 
 #btn {
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    /* background-color: var(--svgs); */
+    background-color: var(--pink);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px var(--border);
+}
+
+#btn:hover {
+    /* background-color: var(--pink); */
+    background-color: var(--svgs);
+    color: black;
+    /* box-shadow: 3px 3px 2px var(--border); */
+}
+
+#web-btn {
+    /* font-size: 1.2rem; */
+    /* font-weight: 700; */
     color: black;
     text-decoration: none;
     background-color: var(--svgs);
     border-radius: 10px;
     padding: 10px;
+    margin: 5px;
     box-shadow: 2px 2px 2px var(--border);
 }
 
-#btn:hover {
+#web-btn:hover {
+    background-color: var(--pink);
     color: white;
-    box-shadow: 3px 3px 2px var(--border);
+    /* box-shadow: 3px 3px 2px var(--border); */
 }
 
 i {
@@ -90,6 +112,16 @@ iframe {
     border-radius: 10px;
 }
 
+ul {
+    /* padding-left: 30px; */
+    padding: 5px 5px 5px 30px;  
+    margin: 5px;
+}
+
+li {
+    padding: 10px 0 10px 0;
+}
+
 /* ------------------- bio section ------------------ */
 
 .bio-section {
@@ -106,6 +138,7 @@ iframe {
 
 .bio-section h1, .bio-section h2, .bio-section p {
     /* padding: 5px 15px;   */
+    padding: 5px 0 5px 0;
     margin: 5px;
     width: 100%;
 }
@@ -120,9 +153,17 @@ iframe {
 }
 
 .tag {
-  color: var(--pink);
-  font-size: 1.1rem;
-  font-weight: 700;
+    text-align: left;
+    color: var(--pink);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.play {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px 0;
+    text-align: center;
 }
 
 /* #qr-code {
