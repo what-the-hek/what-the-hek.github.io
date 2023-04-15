@@ -253,6 +253,7 @@ li {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    width: 90%;
 }
 
 .project-details {
