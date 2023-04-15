@@ -1,20 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 /*  --------------------------------- site-wide styles ------------------------------- */
 
 :root {
- --hairpink: #b9506f;
+ /* --hairpink: #b9506f; */
  --textpink: #7C3148;
  --black-blue: #11151C;
  --dark-blue: #212D40;
- --background: #364156;
+ /* --background: #364156; */
  --ghostwhite: #E6E9F0;
+
+ --hairpink: #f25d98;
+ --soft-pink: #f2a9bc;
+
+ --svgs2: #dac5ae;
+ --svgs-border: #92ade4;
+ --svgs: #a7beed;
+ --text: #b49573;
+ --texta: #c2aa90;
+ /* --background: #F2EEED; */
+ --border: #eae2e0;
+
 }
 
 * {
     font-family: 'Comfortaa', 'Dosis', Arial, sans-serif;
     font-size: 16px;
-    color: var(--ghostwhite);
+    color: black;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -35,7 +47,7 @@ body {
 } 
 
 header {
-    background-color: var(--background);
+    background-color: var(--svgs);
     position: fixed;
     width: 100%;
     display: flex;
@@ -71,7 +83,7 @@ a:hover {
     color: white;
     border-radius: 5px;
     border: none;
-    background-color: var(--black-blue);
+    /* background-color: var(--black-blue); */
 }
 
 /*  end  */
@@ -79,14 +91,21 @@ a:hover {
 
 #about-me {
     display: flex;
+    flex-direction: column;
     width: 60%;
     padding: 50px;
     margin: 20px;
 }
 
+#profile{
+    display: flex;
+    justify-content: center;
+}
+
 #mini-nav {
     flex-wrap: wrap;
     align-content: space-around;
+    width: 60%;
 }
 
 #mini-nav a {
@@ -98,20 +117,25 @@ a:hover {
     color: white;
     border-radius: 5px;
     border: 1px solid var(--black-blue);
-    background-color: var(--black-blue);
+    /* background-color: var(--black-blue); */
 }
 
 #profile-img {
+    background-color: var(--svgs);
     width: 200px;
-    height: 200px;
     object-fit: cover;
     object-position: center;
+    border-radius: 100%;
 }
 
 h1 {
-    font-size: 4rem;
+    font-family: "Pacifico";
+    color: black;
+    width: 100%;
+    font-size: 5rem;
     font-weight: 700;
     padding: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -139,6 +163,7 @@ section div {
 }
 
 #projects-section {
+    background-color: var(--svgs);
     padding-top: 50px;
     align-items: center;
 }
@@ -159,14 +184,14 @@ section div {
     padding: 20px;
     margin: 10px;
     width: 40%;
-    background-color: var(--black-blue);
-    border: 1px solid var(--black-blue);
+    background-color: white;
+    border: 1px solid var(--svgs-border);
     border-radius: 5px;
 }
 
 #projects-section a:hover {
     border: 1px solid var(--black-blue);
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
 }
 
 .card-title {
@@ -192,6 +217,8 @@ form {
     width: 50%;
     padding: 20px;
     margin: 20px;
+    background-color: var(--svgs);
+    border-radius: 10px;
 }
 
 label {
@@ -214,7 +241,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--black-blue);
+    background-color: var(--svgs-border);
 }
 
 /*  end  */
@@ -223,8 +250,8 @@ button:hover {
 #projects {
     display: flex;
     flex-direction: row;
-    color: var(--black-blue);
-    background-color: var(--ghostwhite);
+    /* color: var(--black-blue); */
+    background-color: var(--svgs);
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
@@ -256,7 +283,7 @@ iframe, #projects img {
     height: 250px;
     object-fit: cover;
     object-position: center;
-    padding: 5px;
+    /* padding: 5px; */
     border: 1px solid var(--dark-blue);
     border-radius: 10px;
     margin: 5px;
@@ -268,14 +295,14 @@ iframe, #projects img {
 
 #projects div a {
     color: var(--hairpink);
-    background-color: var(--ghostwhite);
+    /* background-color: var(--ghostwhite); */
     padding: 0;
     margin: 0;
 }
 
 #projects div a:hover {
     color: var(--textpink);
-    background-color: var(--ghostwhite);
+    /* background-color: var(--ghostwhite); */
     border: none;
     text-decoration: underline;
 }
@@ -336,7 +363,7 @@ iframe, #projects img {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: white;
+        background: var(--svgs);
       }
 
       /* -- transform hamburger lines -- */
@@ -357,14 +384,17 @@ iframe, #projects img {
       /* -- change hamburger when checked -- */
       .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
         transform: rotate(45deg);
+        background: white;
       }
       
       .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
         transform: scaleY(0);
+        background: white;
       }
       
       .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
+        background: white;
       }
     /*  ------------- end of toggle menu ------------- */
 
@@ -425,8 +455,11 @@ iframe, #projects img {
     #profile-img {
         width: 30%;
         height: 30%;
-        padding: 1em;
-        border-radius: 10%;
+        /* padding: 1em; */
+        background-color: var(--svgs);
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100%;
     }
 
     img {
