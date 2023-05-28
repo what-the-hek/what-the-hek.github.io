@@ -173,6 +173,12 @@ section div {
     margin: 0 100px;
 }
 
+#projects-section h2 {
+    font-family: "Pacifico";
+    text-align: center;
+    font-size: 2.5em;
+}
+
 .card img {
     object-fit: cover;
     object-position: center;
@@ -187,6 +193,10 @@ section div {
     background-color: white;
     border: 1px solid var(--svgs-border);
     border-radius: 5px;
+}
+
+#featured-projects a {
+    width: 28%;
 }
 
 #projects-section a:hover {
