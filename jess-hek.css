@@ -12,11 +12,12 @@
  --soft-pink: #f2a9bc;
 
  --svgs2: #dac5ae;
- --svgs: #a7beed;
- --text: #b49573;
+ --svgs: #f25d98;
+ --svgs-border: #7195dc;
+ --text: #7195dc;
  --texta: #c2aa90;
- --background: #F2EEED;
- --border: #eae2e0;
+ --background: #92ade4;
+ --border: #7195dc;
 }
 
 * {
@@ -79,6 +80,7 @@ h1 {
 
 .tag {
     font-size: 1.2rem;
+    color: white;
 }
 
 p {
@@ -117,6 +119,10 @@ a:active {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+.qr-code p {
+    color: white;
 }
 
 img {
