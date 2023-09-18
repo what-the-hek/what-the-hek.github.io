@@ -177,13 +177,15 @@ section div {
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 300px;
+    height: 250px;
+    border: 1px solid var(--svgs-border);
+
 }
 
 #projects-section a {
     padding: 20px;
     margin: 10px;
-    width: 40%;
+    width: 25%;
     background-color: white;
     border: 1px solid var(--svgs-border);
     border-radius: 5px;
@@ -195,16 +197,19 @@ section div {
 }
 
 .card-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 i {
     font-size: .8rem;
-    color: white;
+    font-style: normal;
+    /* color: white; */
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-    background-color: var(--hairpink);
+    /* background-color: var(--hairpink); */
+    border: 1px solid var(--hairpink);
     line-height: 40px;
 }
 
