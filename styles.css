@@ -542,9 +542,9 @@ iframe {
         width: 100%;
     }
 
-    #projects-section a {
+    /* #projects-section a {
         width: 100%;
-    }
+    } */
 
     #projects-section div {
         flex-wrap: wrap;
