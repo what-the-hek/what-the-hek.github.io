@@ -300,7 +300,7 @@ button:hover {
     padding-left: 50px;
 }
 
-#projects #intro {
+#projects .intro {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
