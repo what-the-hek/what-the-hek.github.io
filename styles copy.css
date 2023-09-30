@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/*  --------------------------------- site-wide styles ------------------------------- */
+
+:root {
+ /* --hairpink: #b9506f; */
+ --textpink: #7C3148;
+ --black-blue: #11151C;
+ --dark-blue: #212D40;
+ /* --background: #364156; */
+ --ghostwhite: #E6E9F0;
+
+ --hairpink: #f25d98;
+ --soft-pink: #f2a9bc;
+
+ --svgs2: #dac5ae;
+ --svgs-border: #92ade4;
+ --svgs: #a7beed;
+ --text: #b49573;
+ --texta: #c2aa90;
+ /* --background: #F2EEED; */
+ --border: #eae2e0;
+ --shadow: #c7d4ed;
+
+}
+
+* {
+    font-family: 'Comfortaa', 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid lightgray; */
+}
+
+img {
+    border-radius: 5px;
+}
+
+/*  end  */
+/*  --------------------------------- general styles for main, body and header ------------------------------- */
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+} 
+
+header {
+    background-color: var(--svgs);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+main section {
+    justify-content: space-around;
+}
+
+/*  end  */
+/*  --------------------------------- navigation bar ------------------------------- */
+
+.openmenu { /* hides checkbox for most larger devices */
+    display: none;
+}
+
+.button {
+    color: white;
+    background-color: var(--hairpink);
+    border: 1px solid var(--hairpink);
+    border-radius: 5px;
+}
+
+.button:hover {
+    border: 1px solid var(--dark-blue)
+}
+
+a:hover {
+    color: white;
+    border-radius: 5px;
+    border: none;
+    /* background-color: var(--black-blue); */
+}
+
+/*  end  */
+/*  --------------------------------- content styles ------------------------------- */
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 50px;
+    margin: 20px;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+}
+
+#mini-nav {
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 60%;
+}
+
+#mini-nav a {
+    border: 1px solid var(--hairpink);
+    border-radius: 5px;
+}
+
+#mini-nav a:hover {
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--black-blue);
+    /* background-color: var(--black-blue); */
+}
+
+#profile-img {
+    background-color: var(--svgs);
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+h1 {
+    font-family: "Pacifico";
+    color: black;
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+
+div {
+    padding: 20px;
+}
+
+a, p{
+    padding: 5px;
+    margin: 5px;
+}
+
+/*  end  */
+/*  --------------------------------- projects section ------------------------------- */
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+#projects-section {
+    background-color: var(--svgs);
+    padding-top: 50px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#projects-section div {
+    /* width: 80%; */
+    margin: 0 100px;
+    justify-content: center;
+}
+
+.card img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 250px;
+    border: 1px solid var(--svgs-border);
+
+}
+
+#projects-section a {
+    padding: 20px;
+    margin: 10px;
+    width: 25%;
+    background-color: white;
+    border: 1px solid var(--svgs-border);
+    border-radius: 5px;
+}
+
+#projects-section a:hover {
+    border: 1px solid var(--black-blue);
+    /* background-color: var(--dark-blue); */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+i {
+    font-size: .8rem;
+    font-style: normal;
+    /* color: white; */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    /* background-color: var(--hairpink); */
+    /* border: 1px solid var(--hairpink); */
+    border: 1px solid var(--svgs-border);
+    line-height: 40px;
+}
+
+/*  end  */
+/*  --------------------------------- contact form ------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--svgs);
+    border-radius: 10px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    color: black;
+}
+
+button {
+    background-color: var(--hairpink);
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--svgs-border);
+}
+
+/*  end  */
+/*  --------------------------------- projects ------------------------------- */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--svgs);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#projects div {
+    border-radius: 15px;
+    background-color: white;
+    width: 60%;
+    margin: 10px;
+}
+
+
+#projects div h2, #projects div p, #projects div ul li {
+    color: var(--black-blue);
+    padding: 10px;
+}
+
+#projects div p {
+    width: 100%;
+}
+
+#projects div h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#projects div ul {
+    color: var(--black-blue);
+    padding-left: 50px;
+}
+
+#projects .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#projects a .p-link {
+    padding:0!important;
+    margin: 0!important;
+    color: var(--black-blue)!important;
+    text-decoration: underline!important;
+}
+
+#projects a .p-link:hover {
+    color: var(--hairpink)!important;
+}
+
+#projects a img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--dark-blue);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#projects a img:hover {
+    box-shadow: 2px 2px 5px 3px var(--shadow);
+}
+
+/* ----------------------------------------- media queries ---------------------------------- */
+@media (max-width: 810px) {
+    
+
+    /* ---- toggle menu for nav on smaller devices ---- */
+    .menu {
+        display: none;
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .openmenu {
+        display: block;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 5;
+        cursor: pointer;
+        /* -- hides checkbox -- */
+        opacity: 0;
+        margin: 10px;
+    }
+
+    /* -- opens menu -- */
+    .checkbox input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+      }
+
+    .checkbox .hamburger-lines {
+        padding: 0;
+        margin: 10px;
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .checkbox .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--svgs);
+        border: 1px solid white;
+      }
+
+      /* -- transform hamburger lines -- */
+      .checkbox .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .checkbox .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .checkbox .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      /* -- change hamburger when checked -- */
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+        background: white;
+        /* border: 1px solid var(--svgs-border); */
+      }
+      
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+        background: white;
+        /* border: 1px solid var(--svgs-border); */
+      }
+      
+      .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+        background: white;
+        /* border: 1px solid var(--svgs-border); */
+      }
+    /*  ------------- end of toggle menu ------------- */
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p, a, i, li {
+        font-size: 1em;
+    }
+
+    .card-title {
+        font-size: 1.3em;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    section, section div {
+        padding: 0;
+    }
+
+    #about-me, #mini-nav {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #about-me {
+        align-items: center;
+    }
+
+    #projects-section div, #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
+        margin: 10px;
+    }
+
+    #projects-section a {
+        width: 80%;
+    }
+
+    /* #projects {
+        flex-direction: column-reverse;
+    } */
+
+    #projects div {
+        width: 95%;
+    }
+
+    #projects a img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #profile-img {
+        width: 30%;
+        height: 30%;
+        /* padding: 1em; */
+        background-color: var(--svgs);
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100%;
+    }
+
+    img {
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    button {
+        width: 100%;
+    }
+    
+    .video {
+        /* position: relative;
+        overflow: hidden;
+        width: 100%; */
+        height: 30vh;
+    }
+
+    iframe, #projects img {
+        align-self: center;
+        /* width: 85%; */
+    }
+
+    form {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+
+    #about-me {
+        padding: 0;
+        width: 90%;
+    }
+    
+    #projects-section {
+        width: 100%;
+    }
+
+    /* #projects-section a {
+        width: 100%;
+    } */
+
+    #projects-section div {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+    }
+    
+    header div, header nav {
+        font-size: 2em;
+        padding: 5px;
+    }
+
+ }
+
+ @media (min-width: 2000px) {
+
+    header {
+        justify-content: space-around;
+        padding: 0px 30px 0px 30px;
+    }
+
+    #about-me {
+        width: 30%;
+    }
+
+    #projects-section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding: 50px;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+ }
