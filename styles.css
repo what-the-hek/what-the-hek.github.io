@@ -24,8 +24,8 @@
     --text-light: var(--white-light);
     --text-dark: var(--grey-dark);
     --background-light: var(--white-light);
-    --background-mid: var(--blue-light);
-    --background-dark: var(--blue-mid);
+    --background-mid: var(--blue-mid);
+    --background-dark: var(--blue-dark);
     --background-button: var(--pink-mid-ish);
     --border-light: 1px solid var(--blue-light);
     --border-mid: 1px solid var(--blue-mid);
@@ -133,8 +133,23 @@
     background: var(--white-light);
     }
 
-/*  ------------- end of toggle nav menu ------------- */
+/*  ----------------- buttons ---------------- */
 
+.button {
+    color: var(--text-light);
+    text-decoration: none;
+    background-color: var(--background-button);
+    padding: 5px;
+    border: var(--border-button);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+a.button:hover {
+    border: var(--border-v-dark);
+}
+
+/*  ------------------ global ----------------- */
 img {
     width: 100%;
 }
@@ -143,7 +158,24 @@ header {
     background-color: var(--background-mid);
 }
 
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav a:hover {
+    color: var(--text-light);
+}
+
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-light);
+}
+
+section { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,17 +185,10 @@ footer {
     background-color: var(--background-mid);
 }
 
-section { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--background-light);
-}
-
 h1 {
     font-family: "Pacifico";
     width: 100%;
-    font-size: 5rem;
+    font-size: 5em;
     font-weight: 700;
     text-align: center;
 }
@@ -179,8 +204,11 @@ h3 {
 }
 
 .projects {
-    background-color: var(--blue-light);
+    background-color: var(--background-mid);
 }
+
+
+/* ------------------- home page --------------------- */
 
 .card {
     width: 80%;
@@ -188,22 +216,20 @@ h3 {
     margin: 10px;
     background-color: var(--white-light);
     border: var(--border-dark);
-    border-radius: 5px;
+    border-radius: 15px;
     text-decoration: none;
 }
 
-.projects a.card:hover {
+a.card:hover {
     border: var(--border-v-dark);
 }
 
-.button {
-    color: var(--text-light);
-    text-decoration: none;
-    background-color: var(--background-button);
-    border: var(--border-button);
-    border-radius: 5px;
-}
+/*  ------------------------ project pages ---------------- */
 
-a.button:hover {
-    border: var(--border-v-dark);
+.projects div {
+    background-color: var(--background-light);
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
 }
