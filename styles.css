@@ -13,26 +13,38 @@
     --pink-mid-ish: #e15d92;
     --pink-dark: #b9506f;
     --pink-v-dark: #7C3148;
+    --purple-light: #F9F0F8;
+    --purple-light-ish: #F3E2F1;
+    --purple-mid: #AD48A3;
+    --purple-mid-ish: #813679;
+    --purple-dark: #562450;
+    --purple-v-dark: #3A1836;
     --blue-light: #c7d4ed;
+    /* blue-light wcag AAA compliant : #D8E2F3 */
     --blue-mid: #a7beed;
     --blue-dark: #92ade4;
+    /* blue-v-dark wcag AAA compliant : #33467A */
     --blue-v-dark: #748ec3;
     --grey-light: #364156;
     --grey-mid: #212D40;
     --grey-dark: #11151C;
 
-    --text-light: var(--white-light);
-    --text-dark: var(--grey-dark);
-    --background-light: var(--white-light);
-    --background-mid: var(--blue-mid);
-    --background-dark: var(--blue-dark);
-    --background-button: var(--pink-mid-ish);
-    --border-light: 1px solid var(--blue-light);
-    --border-mid: 1px solid var(--blue-mid);
-    --border-dark: 1px solid var(--blue-dark);
-    --border-v-dark: 1px solid var(--blue-v-dark);
-    --border-button: 1px solid var(--pink-mid-ish);
-    --shadow: ;
+    --text-light: var(--blue-light);
+    --text-dark: var(--blue-v-dark);
+    --background-light: var(--blue-light);
+    /* --background-mid: var(--blue-light-ish); */
+    --background-dark: var(--blue-v-dark);
+    --background-button: var(--blue-light);
+    /* --border-light: 3px solid var(--blue-light-ish); */
+    --border-mid: 3px solid var(--blue-mid);
+    --border-dark: 3px solid var(--blue-dark);
+    --border-v-dark: 3px solid var(--blue-v-dark);
+    --border-v-v-dark: 3px solid var(--grey-light);
+    --border-button: 3px solid var(--blue-mid);
+    --shadow-light: ;
+    --shadow-mid: ;
+    --shadow-dark: ;
+    --box-shadow: 0px 0px 8px 1px rgb(227, 227, 227);
 
 }
 
@@ -98,8 +110,8 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--background-dark);
-    border: 1px solid var(--white-light);
+    background: white;
+    border: var(--border-v-dark);
     }
 
     /* -- transform hamburger lines -- */
@@ -120,42 +132,54 @@
     /* -- change hamburger when checked -- */
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
-    background: var(--white-light);
+    background: white;
+    border: var(--border-v-dark)
     }
     
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
-    background: var(--white-light);
+    background: white;
+    border: var(--border-v-dark)
     }
     
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
-    background: var(--white-light);
+    background: white;
+    border: var(--border-v-dark)
     }
 
 /*  ----------------- buttons ---------------- */
 
-.button {
-    color: var(--text-light);
-    text-decoration: none;
-    background-color: var(--background-button);
-    padding: 5px;
+button, .button {
+    /* background-color: var(--background-button); */
+    background-color: white;
     border: var(--border-button);
     border-radius: 15px;
+    color: var(--text-dark);
+    font-size: 1.2em;
     margin: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
 }
 
-a.button:hover {
+button:hover, a.button:hover {
     border: var(--border-v-dark);
 }
 
 /*  ------------------ global ----------------- */
 img {
     width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 header {
-    background-color: var(--background-mid);
+    background-color: var(--background-light);
+    /* position: fixed; */
 }
 
 nav a {
@@ -179,10 +203,25 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
 }
 
 footer {
-    background-color: var(--background-mid);
+    background-color: var(--background-light);
+}
+
+h1, h2, h3, h4, p, ul, li, i {
+    padding: 5px;
+    margin: 5px;
 }
 
 h1 {
@@ -191,6 +230,7 @@ h1 {
     font-size: 5em;
     font-weight: 700;
     text-align: center;
+    color: var(--text-dark);
 }
 
 h2 {
@@ -204,27 +244,44 @@ h3 {
 }
 
 .projects {
-    background-color: var(--background-mid);
+    background-color: var(--background-light);
 }
 
+.intro {
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+}
 
 /* ------------------- home page --------------------- */
+
+#profile-img {
+    width: 30%;
+    height: 30%;
+    /* background-color: var(--background-mid); */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0%;
+}
 
 .card {
     width: 80%;
     padding: 10px;
     margin: 10px;
-    background-color: var(--white-light);
-    border: var(--border-dark);
+    /* background-color: var(--background-light); */
+    background-color: white;
+    border: 3px solid var(--blue-mid);
     border-radius: 15px;
     text-decoration: none;
+    box-shadow: var(--box-shadow);
 }
 
 a.card:hover {
-    border: var(--border-v-dark);
+    border: var(--blue-mid);
 }
 
-/*  ------------------------ project pages ---------------- */
+/*  ------------------------ project pages ------------------- */
 
 .projects div {
     background-color: var(--background-light);
@@ -232,4 +289,40 @@ a.card:hover {
     padding: 10px;
     border-radius: 15px;
     margin: 10px;
+}
+
+.projects div img {
+    width: 50px;
+    height: 50px;
+}
+
+/*  ------------------------ contact page ------------------- */
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+label {
+    padding: 5px;
+}
+
+input, textarea {
+    padding: 5px;
+    border-radius: 15px;
+    /* margin: 10px; */
+}
+
+/*  ------------------------ media queries --------------------- */
+
+@media (min-width: 1000px) {
+
+    .openmenu, #open-menu, .hamburger-lines { /* hides checkbox for most larger devices */
+        display: none;
+    }
 }
