@@ -1,63 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ubuntu+Condensed&family=Pacifico&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-    --white-light: #f4f8ff;
-    --white-blue: #f6f8fb;
-    --white-mid: #F2EEED;
-    --white-dark: #eae2e0;
-    --brown-light: #dac5ae;
-    --brown-mid: #c2aa90;
-    --brown-dark: #b49573;
-    --pink-light: #f2a9bc;
-    --pink-light-ish: #e499ad;
-    --pink-mid: #f25d98;
-    --pink-mid-ish: #e15d92;
-    --pink-dark: #b9506f;
-    --pink-v-dark: #7C3148;
-    --purple-light: #F9F0F8;
-    --purple-light-ish: #F3E2F1;
-    --purple-mid: #AD48A3;
-    --purple-mid-ish: #813679;
-    --purple-dark: #562450;
-    --purple-v-dark: #3A1836;
-    /* blue-light wcag AAA compliant : #D8E2F3 */
-    --blue-light: #D8E2F3;
-    /* --blue-light: #c7d4ed; */
-    --blue-mid: #a7beed;
-    --blue-dark: #92ade4;
-    /* blue-v-dark wcag AAA compliant : #33467A */
-    --blue-v-dark: #33467A;
-    /* --blue-v-dark: #748ec3; */
-    --grey-light: #364156;
-    --grey-mid: #212D40;
-    --grey-dark: #11151C;
+    --white: white;
+    --pink: #FF99C8;
+    --yellow: #FCF6BD;
+    --green: #D0F4DE;
+    --blue: #A9DEF9;
+    --purple: #E4C1F9;
+    --black: #071217;
+    --pink-light: #f8cfe2;
+    --yellow-light: #f7f5e6;
+    --green-light: #eaf1ed;
+    --blue-light: #d6eefa;
+    --purple-light: #ecddf4;
 
-    --text-light: var(--blue-light);
-    --text-dark: var(--blue-v-dark);
-    --background-light: var(--blue-light);
-    /* --background-mid: var(--blue-light-ish); */
-    --background-dark: var(--blue-v-dark);
-    --background-button: var(--blue-light);
-    /* --border-light: 3px solid var(--blue-light-ish); */
-    --border-mid: 2px solid var(--blue-mid);
-    --border-dark: 2px solid var(--blue-dark);
-    --border-v-dark: 2px solid var(--blue-v-dark);
-    --border-v-v-dark: 2px solid var(--grey-light);
-    --border-button: 2px solid var(--blue-mid);
-    --border-hamburger: 2px solid var(--blue-dark);
-    --shadow-light: 0px 0px 8px 1px var(--blue-light);
-    --shadow-mid: 0px 0px 8px 1px var(--blue-mid);
-    --shadow-dark: 1px 1px 5px 1px var(--blue-dark);
-    --shadow-v-dark: 1px 1px 5px 1px var(--blue-v-dark);
-    --box-shadow: 0px 0px 8px 1px rgb(227, 227, 227);
+    --text-light: var(--white);
+    --text-dark: var(--black);
 
+    --background-light: var(--white);
+    --background-dark: var(--black);
+
+    --border-white: 2px solid var(--white);
+    --border-pink: 2px solid var(--pink);
+    --border-pink-light: 2px solid var(--pink-light);
+    --border-yellow: 2px solid var(--yellow);
+    --border-green: 2px solid var(--green);
+    --border-blue: 2px solid var(--blue);
+    --border-purple: 2px solid var(--purple);
+
+    --hamburger-background: var(--pink);
+    --hamburger-border: 1px solid var(--white);
+
+    --shadow-pink: 1px 1px 5px 1px var(--pink-light);
+    --shadow-yellow: 1px 1px 5px 1px var(--yellow-light);
+    --shadow-green: 1px 1px 5px 1px var(--green-light);
+    --shadow-blue: 1px 1px 5px 1px var(--blue-light);
+    --shadow-purple: 1px 1px 5px 1px var(--purple-light);
+    --box-shadow: 1px 1px 5px 1px var(--blue);
+
+    --rainbow: linear-gradient(to bottom right, var(--pink-light), var(--yellow-light), var(--green-light), var(--blue-light), var(--purple-light));
 }
 
 * {
-    font-family: 'Ubuntu Condensed', 'Comfortaa', 'Dosis', Arial, sans-serif;
+    font-family: 'Comfortaa', 'Dosis', Arial, sans-serif;
     font-size: 16px;
     color: var(--text-dark);
-    /* text-decoration: none; */
     padding: 0;
     margin: 0;
     /* border: 1px solid lightgray; */
@@ -115,8 +102,8 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--white-blue);
-    border: var(--border-hamburger);
+    background-color: var(--pink);
+    border: 2px solid var(--white);
     }
 
     /* -- transform hamburger lines -- */
@@ -137,64 +124,55 @@
     /* -- change hamburger when checked -- */
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
-    background: var(--white-blue);
-    border: var(--border-hamburger)
+    background-color: var(--pink);
+    border: 1px solid var(--white);
     }
     
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
-    background: var(--white-blue);
-    border: var(--border-hamburger)
+    background-color: var(--pink);
+    border: 1px solid var(--white);
     }
     
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
-    background: var(--white-blue);
-    border: var(--border-hamburger)
+    background-color: var(--pink);
+    border: 1px solid var(--white);
     }
 
-/*  ----------------- buttons ---------------- */
-
-button, .button {
-    /* background-color: var(--background-button); */
-    background-color: var(--white-blue);
-    border: var(--border-button);
-    border-radius: 5px;
-    color: var(--text-dark);
-    font-size: 1.2em;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    width: 80%;
-}
-
-button:hover, a.button:hover {
-    border: var(--border-v-dark);
-}
-
 /*  ------------------ global ----------------- */
+
+a:hover, a:active {
+    color:#E6006B;
+}
+
 img {
     width: 100%;
-    min-height: 200px;
     object-fit: cover;
     object-position: center;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 header {
-    background-color: var(--background-light);
-    /* position: fixed; */
+    background-color: var(--background-light); /* for browers that do not support gradients */
+    background-image: var(--rainbow);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%
 }
 
 nav a {
     text-decoration: none;
     padding: 5px;
     margin: 5px;
+    border-bottom: var(--border-white);
 }
 
-nav a:hover {
-    color: var(--text-light);
+nav a:hover, nav a:active {
+    background-color: var(--background-light);
+    color: #E6006B;
+    border-radius: 10px;
 }
 
 main {
@@ -208,8 +186,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px;
-    margin: 5px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 section div {
@@ -217,7 +195,6 @@ section div {
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    margin: 5px;
     width: 100%;
 }
 
@@ -230,102 +207,162 @@ h1, h2, h3, h4, p, ul, li, i {
     margin: 5px;
 }
 
-h1 {
-    font-family: "Amatic SC";
+ul {
     width: 100%;
-    font-size: 5.5em;
+}
+
+li {
+    margin-left: 30px;
+}
+
+h1 {
+    font-family: "Pacifico";
+    width: 100%;
+    font-size: 4em;
     font-weight: 400;
     text-align: center;
     color: var(--text-dark);
     padding: 10px;
     margin: 10px;
+    /* background-image: var(--rainbow);
+    background-clip: text;
+    color: transparent; */
 }
 
 h2 {
-    font-family: "Amatic SC";
+    font-family: "Pacifico";
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
 }
 
 h3 {
-    font-family: "Amatic SC";
-    font-size: 2em;
+    font-family: "Pacifico";
+    font-size: 1.5em;
 }
-
-.projects {
-    background-color: var(--background-light);
-}
-
-.intro {
-    text-align: center;
-    font-size: 1em;
-    padding: 10px;
-    margin: 10px;
-}
-
-/* ------------------- home page --------------------- */
 
 #profile-img {
-    width: 80%;
-    /* height: 30%; */
-    /* background-color: var(--background-mid); */
+    width: 70%;
     object-fit: cover;
     object-position: center;
     border-radius: 100%;
 }
 
+/*  ----------------- home page ---------------- */
+
+.intro {
+    padding: 10px;
+    margin: 10px;
+    min-height: 350px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*  ----------------- buttons ---------------- */
+
+button, a.button {
+    background-color: var(--pink-light);
+    border: 2px solid var(--pink-light);
+    border-radius: 10px;
+    color: var(--text-dark);
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
+}
+
+button:hover, a.button:hover, button:active, a.button:active {
+    border: var(--border-pink);
+}
+
+/*  ------------------------ projects ------------------- */
+
 .card {
     width: 80%;
     padding: 10px;
     margin: 10px;
-    /* background-color: var(--background-light); */
-    background-color: var(--white-blue);
-    border: 2px solid var(--blue-mid);
-    border-radius: 5px;
+    background-color: var(--background-light);
+    border: 2px solid var(--purple-light);
+    border-radius: 10px;
     text-decoration: none;
-    /* box-shadow: var(--shadow-dark); */
 }
 
-a.card:hover {
-    border: var(--blue-mid);
+a.card:active, a.card:hover {
+    border: var(--border-pink);
 }
 
-/*  ------------------------ project pages ------------------- */
+.projects {
+    background-color: var(--pink-light);
+    background-image: var(--rainbow);
+}
 
 .projects div {
     background-color: var(--background-light);
     width: 90%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
 }
 
-.projects div img {
+.projects div iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.projects div a img {
     width: 50px;
     height: 50px;
+    border: var(--border-purple);
+}
+
+.screenshots {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /*  ------------------------ contact page ------------------- */
 
 form {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-light);
-    padding: 10px;
-    border-radius: 5px;
+    align-items: center;
+}
+
+form div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pink-light);
+    background-image: var(--rainbow);
+    padding: 10px 10px 25px 10px;
+    border-radius: 10px;
     margin: 10px;
 }
 
 label {
+    width: 90%;
     padding: 5px;
 }
 
 input, textarea {
+    width: 90%;
     padding: 5px;
-    border-radius: 5px;
-    /* margin: 10px; */
+    border: var(--border-white);
+    border-radius: 10px;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+    outline: var(--border-pink-light);
 }
 
 /*  ------------------------ media queries --------------------- */
