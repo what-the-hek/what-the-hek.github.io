@@ -13,6 +13,7 @@
     --green-light: #eaf1ed;
     --blue-light: #d6eefa;
     --purple-light: #ecddf4;
+    --pink-dark: #E6006B;
 
     --text-light: var(--white);
     --text-dark: var(--black);
@@ -22,11 +23,15 @@
 
     --border-white: 2px solid var(--white);
     --border-pink: 2px solid var(--pink);
-    --border-pink-light: 2px solid var(--pink-light);
+    --border-pink-light: 1px solid var(--pink-light);
     --border-yellow: 2px solid var(--yellow);
+    --border-yellow-light: 1px solid var(--yellow-light);
     --border-green: 2px solid var(--green);
+    --border-green-light: 1px solid var(--green-light);
     --border-blue: 2px solid var(--blue);
+    --border-blue-light: 1px solid var(--blue-light);
     --border-purple: 2px solid var(--purple);
+    --border-purple-light: 1px solid var(--purple-light);
 
     --hamburger-background: var(--pink);
     --hamburger-border: 1px solid var(--white);
@@ -102,8 +107,8 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background-color: var(--pink);
-    border: 2px solid var(--white);
+    background-color: var(--white);
+    border: var(--border-pink);
     }
 
     /* -- transform hamburger lines -- */
@@ -124,26 +129,26 @@
     /* -- change hamburger when checked -- */
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
-    background-color: var(--pink);
-    border: 1px solid var(--white);
+    background-color: var(--white);
+    border: var(--border-pink);
     }
     
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
-    background-color: var(--pink);
-    border: 1px solid var(--white);
+    background-color: var(--white);
+    border: var(--border-pink);
     }
     
     .checkbox input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
-    background-color: var(--pink);
-    border: 1px solid var(--white);
+    background-color: var(--white);
+    border: var(--border-pink);
     }
 
 /*  ------------------ global ----------------- */
 
 a:hover, a:active {
-    color:#E6006B;
+    color: var(--pink-dark);
 }
 
 img {
@@ -154,7 +159,7 @@ img {
 }
 
 header {
-    background-color: var(--background-light); /* for browers that do not support gradients */
+    background-color: var(--purple-light); /* for browers that do not support gradients */
     background-image: var(--rainbow);
     position: fixed;
     top: 0;
@@ -171,7 +176,7 @@ nav a {
 
 nav a:hover, nav a:active {
     background-color: var(--background-light);
-    color: #E6006B;
+    color: var(--pink-dark);
     border-radius: 10px;
 }
 
@@ -179,7 +184,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background-light);
+    background-color: var(--blue-light); /* for browers that do not support gradients */
+    background-image: var(--rainbow);
+    min-height: 100vh;
 }
 
 section { 
@@ -199,7 +206,13 @@ section div {
 }
 
 footer {
-    background-color: var(--background-light);
+    background-color: var(--purple-light);
+    min-height: 50px;
+    max-height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2, h3, h4, p, ul, li, i {
@@ -264,10 +277,15 @@ h3 {
 
 /*  ----------------- buttons ---------------- */
 
+.intro button, .intro a.button {
+    background-color: var(--white);
+    border: var(--border-pink-light);
+}
+
 button, a.button {
     background-color: var(--pink-light);
-    border: 2px solid var(--pink-light);
-    border-radius: 10px;
+    border: var(--border-pink-light);
+    border-radius: 30px;
     color: var(--text-dark);
     font-size: 1.2em;
     margin: 5px;
@@ -288,7 +306,7 @@ button:hover, a.button:hover, button:active, a.button:active {
     padding: 10px;
     margin: 10px;
     background-color: var(--background-light);
-    border: 2px solid var(--purple-light);
+    border: var(--border-pink-light);
     border-radius: 10px;
     text-decoration: none;
 }
@@ -298,8 +316,8 @@ a.card:active, a.card:hover {
 }
 
 .projects {
-    background-color: var(--pink-light);
-    background-image: var(--rainbow);
+    /* background-color: var(--pink-light); */
+    /* background-image: var(--rainbow); */
 }
 
 .projects div {
@@ -335,6 +353,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 form div{
@@ -343,7 +362,6 @@ form div{
     flex-direction: column;
     align-items: center;
     background-color: var(--pink-light);
-    background-image: var(--rainbow);
     padding: 10px 10px 25px 10px;
     border-radius: 10px;
     margin: 10px;
@@ -362,7 +380,7 @@ input, textarea {
 }
 
 input:active, input:focus, textarea:active, textarea:focus {
-    outline: var(--border-pink-light);
+    outline: var(--border-pink);
 }
 
 /*  ------------------------ media queries --------------------- */
