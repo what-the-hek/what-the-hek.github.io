@@ -387,7 +387,31 @@ input:active, input:focus, textarea:active, textarea:focus {
 
 @media (min-width: 1000px) {
 
-    .openmenu, #open-menu, .hamburger-lines { /* hides checkbox for most larger devices */
+    /*  ------------------------ hide hamburger menu --------------------- */
+    .openmenu, .checkbox .hamburger-lines{
         display: none;
     }
+
+    header, .checkbox, .menu {
+        display: contents;
+        /* height: 500px; */
+    }
+
+    .menu {
+        background-color: var(--purple);
+        height: 500px;
+    }
+
+    /*  ------------------------ global --------------------- */
+
+
+
+    .projects {
+        /* background-color: var(--white); */
+        width: 90vw;
+        margin: 50px;
+        border-radius: 20px;
+    }
+
+
 }
