@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ubuntu+Condensed&family=Pacifico&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
+    --pink-tba: #9A3268;
+    --black-tba: #212830;
+    --gray-tba: #8693AB;
+    --blue-tba: #BDD4E7;
+    --white-tba: #E4E9F1;
+    /* coolors palette https://coolors.co/8693ab-bdd4e7-9a3268-212830-e4e9f1 */
+
+
     --white: white;
     --pink: #FF99C8;
     --yellow: #FCF6BD;
