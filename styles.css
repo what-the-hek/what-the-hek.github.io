@@ -159,8 +159,8 @@ img {
 }
 
 header {
-    background-color: var(--purple-light); /* for browers that do not support gradients */
-    background-image: var(--rainbow);
+    background-color: var(--pink-light); /* for browers that do not support gradients */
+    /* background-image: var(--rainbow); */
     position: fixed;
     top: 0;
     right: 0;
