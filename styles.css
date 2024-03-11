@@ -446,7 +446,7 @@ input:active, input:focus, textarea:active, textarea:focus {
     h1 {
         font-size: 5rem;
         padding-top: 20px;
-        margin-top: 20px;
+        margin-top: 50px;
         /* min-height: 350px; */
         /* align-items: flex-end; */
     }
@@ -514,7 +514,8 @@ input:active, input:focus, textarea:active, textarea:focus {
 
     .intro {
         justify-content: center;
-        min-height: 200px
+        min-height: 200px;
+        margin: 100px 50px 50px 50px;
     }
 
     .intro button, .intro a.button {
@@ -551,13 +552,19 @@ input:active, input:focus, textarea:active, textarea:focus {
         width: 70%;
     }
 
-    .project_details h2, .project_details p, .project_details ul {
+    .project_details p, .project_details ul, .project_details ol {
         /* align-items: flex-start; */
-        width: 100%;
+        /* width: 100%; */
+        align-self: flex-start;
     }
 
     /*  ------------------------ about me --------------------- */
 
+    #profile-img {
+        width: 25%;
+        padding: 20px;
+        margin: 20px;
+    }
 
     /*  ------------------------ contact me --------------------- */
 
