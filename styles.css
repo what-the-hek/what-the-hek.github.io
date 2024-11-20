@@ -313,21 +313,17 @@ button:hover {
     height: 60vh;
 }
 
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 iframe {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-}
-
-#projects a .p-link {
-    padding:0!important;
-    margin: 0!important;
-    color: var(--black-blue)!important;
-    text-decoration: underline!important;
-}
-
-#projects a .p-link:hover {
-    color: var(--hairpink)!important;
 }
 
 #projects a img {
@@ -343,6 +339,18 @@ iframe {
 #projects a img:hover {
     box-shadow: 2px 2px 5px 3px var(--shadow);
 }
+
+/* these aren't working for the links - need to re-do all css */
+/* #p-link {
+    padding:0;
+    margin: 0;
+    color: var(--black-blue);
+    text-decoration: underline;
+}
+
+#projects div p a .p-link:hover {
+    color: var(--hairpink);
+} */
 
 /* ----------------------------------------- media queries ---------------------------------- */
 @media (max-width: 810px) {
