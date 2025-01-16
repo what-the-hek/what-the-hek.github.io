@@ -74,7 +74,7 @@ main section {
     display: none;
 }
 
-.contact-me {
+.contact-me, nav a:hover {
     color: white;
     background-color: var(--hairpink);
     border: 1px solid var(--hairpink);
@@ -82,15 +82,24 @@ main section {
 }
 
 .contact-me:hover {
+    color: black;
+    background-color: var(--svgs);
     border: 1px solid var(--dark-blue)
 }
 
-a:hover {
+nav a {
+    color: var(--black-blue);
+    /* background-color: var(--hairpink); */
+    border: 1px solid var(--black-blue);
+    border-radius: 5px;
+}
+
+/* nav a:hover {
     color: white;
     border-radius: 5px;
     border: none;
-    /* background-color: var(--black-blue); */
-}
+    background-color: var(--black-blue);
+} */
 
 /*  end  */
 /*  --------------------------------- content styles ------------------------------- */
@@ -114,7 +123,7 @@ a:hover {
     width: 60%;
 }
 
-#mini-nav a {
+/* #mini-nav a {
     border: 1px solid var(--hairpink);
     border-radius: 5px;
 }
@@ -123,8 +132,8 @@ a:hover {
     color: white;
     border-radius: 5px;
     border: 1px solid var(--black-blue);
-    /* background-color: var(--black-blue); */
-}
+    background-color: var(--black-blue);
+} */
 
 #profile-img {
     background-color: var(--svgs);
@@ -348,7 +357,7 @@ iframe {
     text-decoration: underline;
 }
 
-#projects div p a .p-link:hover {
+#projects div p a fix-links:hover {
     color: var(--hairpink);
 } */
 
@@ -606,3 +615,16 @@ iframe {
     }
 
  }
+
+ .fix-links {
+    text-decoration: underline;
+    border: none;
+    color: var(--hairpink);
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.fix-links:hover {
+    color: var(--svgs-border);
+}
